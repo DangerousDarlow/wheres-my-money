@@ -1,6 +1,8 @@
 from argparse import ArgumentParser
 from csv import reader as CsvReader
-from os import path as Path, walk as Walk
+from datetime import date, datetime
+from os import path, walk
+from re import sub
 
 
 
@@ -22,13 +24,20 @@ def buildFieldLookup(reader):
 
 
 
+def normaliseDescription(raw):
+    return sub(r'\s+', ' ', raw.strip().lower())
+
+
+
 def loadFile(path):
     print(f"Opening CSV file '{path}'")
     with open(path, encoding='utf8') as csvFile:
         reader = CsvReader(csvFile)
         field = buildFieldLookup(reader)
         for row in reader:
-            print(row[field['date']])
+            date = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
+            description = normaliseDescription(row[field['description']])
+            print(date, description)
 
 
 
@@ -37,6 +46,6 @@ if __name__ == "__main__":
     parser.add_argument('directory', type=str, help='Data file directory')
     args = parser.parse_args()
 
-    for root, dirPaths, filePaths in Walk(args.directory):
+    for root, dirPaths, filePaths in walk(args.directory):
         for filePath in filePaths:
-            loadFile(Path.abspath(Path.join(root, filePath)))
+            loadFile(path.abspath(path.join(root, filePath)))
