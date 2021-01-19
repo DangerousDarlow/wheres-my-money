@@ -58,6 +58,10 @@ if __name__ == "__main__":
     transactions = []
     for root, dirPaths, filePaths in walk(args.directory):
         for filePath in filePaths:
+            (_, extension) = path.splitext(filePath)
+            if extension != '.csv':
+                continue
+
             transactions += loadFile(path.abspath(path.join(root, filePath)))
 
     insertSql = 'INSERT INTO transactions (id,date,amount,description) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING'
