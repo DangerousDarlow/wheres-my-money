@@ -29,22 +29,26 @@ def normaliseDescription(raw):
     return sub(r'\s+', ' ', raw.strip().lower())
 
 
-def loadFile(path):
-    print(f"Reading CSV file '{path}'")
+def loadFile(filePath):
+    (_, extension) = path.splitext(filePath)
+    if extension != '.csv':
+        return
+
+    print(f"Reading CSV file '{filePath}'")
 
     transactions = []
-    with open(path, encoding='utf8') as csvFile:
+    with open(filePath, encoding='utf8') as csvFile:
         reader = CsvReader(csvFile)
         field = buildFieldLookup(reader)
         for row in reader:
             if len(row) < 3:
                 continue
 
-            date = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
+            timestamp = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
             amount = int(float(row[field['amount']]) * AmountScalingFactor)
             description = normaliseDescription(row[field['description']])
             transactions.append(Transaction(
-                id=uuid4(), date=date, amount=amount, description=description))
+                id=uuid4(), timestamp=timestamp, amount=amount, description=description))
 
     print(f"Found {len(transactions)} transactions")
     return transactions
@@ -58,19 +62,15 @@ if __name__ == "__main__":
     transactions = []
     for root, dirPaths, filePaths in walk(args.directory):
         for filePath in filePaths:
-            (_, extension) = path.splitext(filePath)
-            if extension != '.csv':
-                continue
-
             transactions += loadFile(path.abspath(path.join(root, filePath)))
 
-    insertSql = 'INSERT INTO transactions (id,date,amount,description) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING'
+    insertSql = 'INSERT INTO transactions (id,timestamp,amount,description) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING'
 
     with connect(dbConnectionString) as dbConnection:
         dbConnection.autocommit = False
         with dbConnection.cursor() as dbCursor:
             for transaction in transactions:
-                dbCursor.execute(insertSql, (transaction.id, transaction.date,
+                dbCursor.execute(insertSql, (transaction.id, transaction.timestamp,
                                              transaction.amount, transaction.description))
 
             dbConnection.commit()
