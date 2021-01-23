@@ -11,4 +11,4 @@ class DbConfig:
 register_uuid()
 
 dbConfig = DbConfig()
-dbConnectionString = f"dbname={dbConfig.dbName} user={dbConfig.dbUser} password={dbConfig.dbPassword}"
+dbConnectionString = f"host=localhost dbname={dbConfig.dbName} user={dbConfig.dbUser} password={dbConfig.dbPassword}"
