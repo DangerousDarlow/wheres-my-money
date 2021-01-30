@@ -1,5 +1,5 @@
 from csv import reader as CsvReader
-from datetime import datetime
+from datetime import datetime, date
 from io import StringIO
 
 from load_csv import buildFieldLookup, normaliseDescription, loadFile
@@ -53,13 +53,13 @@ def test_load_multiple_transactions():
 
     assert len(transactions) == 2
 
-    assert transactions[0].timestamp == datetime.strptime('01/02/2021', '%d/%m/%Y').date()
+    assert transactions[0].timestamp == date.fromisoformat('2021-02-01')
     assert transactions[0].description == 'd1'
     assert transactions[0].amount == -123450000
     assert transactions[0].added == added
     assert transactions[0].account == account
 
-    assert transactions[1].timestamp == datetime.strptime('02/02/2021', '%d/%m/%Y').date()
+    assert transactions[1].timestamp == date.fromisoformat('2021-02-02')
     assert transactions[1].description == 'd2'
     assert transactions[1].amount == -543210000
     assert transactions[1].added == added
@@ -78,7 +78,7 @@ def test_transaction_field_order_defined_in_first_row():
 
     assert len(transactions) == 1
 
-    assert transactions[0].timestamp == datetime.strptime('01/02/2021', '%d/%m/%Y').date()
+    assert transactions[0].timestamp == date.fromisoformat('2021-02-01')
     assert transactions[0].description == 'd1'
     assert transactions[0].amount == -123450000
     assert transactions[0].added == added

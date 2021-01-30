@@ -1,0 +1,847 @@
+Date,Description,Amount
+29/01/2021,Wages,5000
+26/02/2021,Wages,5000
+31/03/2021,Wages,5000
+30/04/2021,Wages,5000
+31/05/2021,Wages,5000
+30/06/2021,Wages,5000
+30/07/2021,Wages,5000
+31/08/2021,Wages,5000
+30/09/2021,Wages,5000
+29/10/2021,Wages,5000
+30/11/2021,Wages,5000
+31/12/2021,Wages,5000
+01/01/2021,Mortgage,-1000
+01/02/2021,Mortgage,-1000
+01/03/2021,Mortgage,-1000
+01/04/2021,Mortgage,-1000
+01/05/2021,Mortgage,-1000
+01/06/2021,Mortgage,-1000
+01/07/2021,Mortgage,-1000
+01/08/2021,Mortgage,-1000
+01/09/2021,Mortgage,-1000
+01/10/2021,Mortgage,-1000
+01/11/2021,Mortgage,-1000
+01/12/2021,Mortgage,-1000
+04/01/2021,Council Tax,-120
+04/04/2021,Council Tax,-120
+04/05/2021,Council Tax,-120
+04/06/2021,Council Tax,-120
+04/07/2021,Council Tax,-120
+04/08/2021,Council Tax,-120
+04/09/2021,Council Tax,-120
+04/10/2021,Council Tax,-120
+04/11/2021,Council Tax,-120
+04/12/2021,Council Tax,-120
+04/01/2021,Energy,-40
+04/02/2021,Energy,-40
+04/03/2021,Energy,-40
+04/04/2021,Energy,-40
+04/05/2021,Energy,-40
+04/06/2021,Energy,-40
+04/07/2021,Energy,-40
+04/08/2021,Energy,-40
+04/09/2021,Energy,-40
+04/10/2021,Energy,-40
+04/11/2021,Energy,-40
+04/12/2021,Energy,-40
+03/01/2021,Amazon,-31
+12/07/2021,Tesco Petrol Station,-61
+18/09/2021,Amazon,-43
+17/06/2021,Tesco Petrol Station,-62
+09/05/2021,Tesco Petrol Station,-65
+23/01/2021,Amazon,-94
+06/03/2021,Amazon,-1
+17/10/2021,Amazon,-22
+19/09/2021,Amazon,-19
+23/02/2021,Amazon,-85
+28/07/2021,Tesco Petrol Station,-80
+30/05/2021,Amazon,-41
+25/07/2021,Tesco,11
+21/05/2021,Amazon,-37
+02/06/2021,Tesco Petrol Station,-19
+09/02/2021,Amazon,-36
+15/12/2021,Tesco Petrol Station,-80
+18/12/2021,Tesco Petrol Station,-79
+16/07/2021,Tesco Petrol Station,-20
+03/02/2021,Amazon,-51
+31/07/2021,Tesco Petrol Station,8
+13/12/2021,Tesco Petrol Station,-98
+13/08/2021,Tesco,19
+28/05/2021,Amazon,5
+23/08/2021,Tesco Petrol Station,-34
+20/09/2021,Amazon,7
+06/06/2021,Amazon,-46
+28/05/2021,Tesco,-79
+14/06/2021,Tesco Petrol Station,-4
+29/04/2021,Amazon,-35
+09/06/2021,Tesco Petrol Station,-20
+19/09/2021,Tesco Petrol Station,3
+22/04/2021,Tesco,3
+20/12/2021,Tesco Petrol Station,-69
+04/10/2021,Amazon,-75
+15/09/2021,Amazon,0
+18/05/2021,Tesco,-91
+17/12/2021,Tesco Petrol Station,-80
+25/07/2021,Tesco,-94
+24/02/2021,Tesco Petrol Station,-100
+18/08/2021,Amazon,-40
+11/05/2021,Tesco,-19
+27/06/2021,Amazon,-38
+19/01/2021,Amazon,-6
+09/12/2021,Tesco,-46
+05/09/2021,Amazon,-95
+24/09/2021,Tesco Petrol Station,-86
+07/10/2021,Amazon,-59
+15/08/2021,Tesco Petrol Station,-86
+23/11/2021,Tesco,-7
+07/01/2021,Tesco Petrol Station,-95
+27/01/2021,Tesco,-68
+10/10/2021,Tesco,-3
+19/09/2021,Tesco,-55
+04/01/2021,Tesco,-83
+10/06/2021,Tesco,-29
+13/08/2021,Tesco,-84
+24/01/2021,Tesco,-3
+29/01/2021,Amazon,7
+14/11/2021,Tesco,-14
+31/01/2021,Tesco Petrol Station,-28
+18/01/2021,Tesco,14
+27/09/2021,Tesco,-99
+30/06/2021,Amazon,-52
+29/10/2021,Tesco,-91
+08/11/2021,Tesco Petrol Station,-7
+19/03/2021,Tesco Petrol Station,-25
+22/05/2021,Amazon,-65
+24/04/2021,Tesco Petrol Station,-67
+16/06/2021,Tesco Petrol Station,8
+12/01/2021,Amazon,-81
+01/02/2021,Tesco Petrol Station,8
+12/01/2021,Tesco,-40
+08/06/2021,Amazon,-43
+12/07/2021,Amazon,-51
+16/02/2021,Tesco Petrol Station,-84
+08/05/2021,Tesco,10
+06/09/2021,Amazon,-91
+19/01/2021,Tesco Petrol Station,-6
+06/11/2021,Tesco Petrol Station,-91
+10/10/2021,Tesco,1
+18/10/2021,Tesco,-59
+21/06/2021,Tesco,-61
+23/10/2021,Tesco Petrol Station,9
+26/09/2021,Tesco Petrol Station,-24
+02/01/2021,Amazon,-21
+08/05/2021,Tesco,-98
+27/08/2021,Tesco Petrol Station,-62
+05/02/2021,Amazon,-86
+15/08/2021,Tesco Petrol Station,-96
+03/11/2021,Amazon,-26
+27/08/2021,Tesco Petrol Station,-47
+18/12/2021,Tesco,8
+09/02/2021,Tesco Petrol Station,-72
+02/06/2021,Tesco,-29
+02/01/2021,Tesco,-63
+31/07/2021,Tesco Petrol Station,-95
+21/02/2021,Amazon,1
+20/03/2021,Tesco Petrol Station,-83
+19/06/2021,Tesco,-25
+10/12/2021,Tesco,-82
+29/09/2021,Tesco,-61
+04/10/2021,Tesco Petrol Station,-63
+26/02/2021,Tesco,-11
+19/08/2021,Amazon,16
+08/09/2021,Amazon,-58
+23/01/2021,Tesco,-19
+06/02/2021,Tesco Petrol Station,-8
+11/05/2021,Tesco Petrol Station,0
+06/03/2021,Tesco,-59
+03/07/2021,Amazon,-8
+24/10/2021,Tesco Petrol Station,-57
+13/01/2021,Tesco,0
+12/02/2021,Tesco,-1
+09/01/2021,Amazon,-67
+29/05/2021,Tesco,-45
+26/05/2021,Tesco,-46
+06/06/2021,Amazon,-67
+29/01/2021,Amazon,-47
+18/03/2021,Amazon,-11
+25/02/2021,Tesco Petrol Station,-32
+19/07/2021,Tesco Petrol Station,-94
+27/05/2021,Tesco,-65
+06/11/2021,Tesco,-7
+07/12/2021,Amazon,16
+02/10/2021,Amazon,-26
+27/11/2021,Tesco Petrol Station,-31
+08/06/2021,Amazon,-28
+17/09/2021,Tesco,-93
+18/09/2021,Tesco,12
+01/01/2021,Tesco Petrol Station,-19
+07/05/2021,Tesco,-78
+13/09/2021,Tesco Petrol Station,-60
+12/07/2021,Tesco Petrol Station,-58
+30/07/2021,Amazon,-34
+31/12/2021,Tesco,-20
+11/01/2021,Tesco,13
+20/07/2021,Tesco Petrol Station,-28
+25/01/2021,Amazon,-28
+17/10/2021,Amazon,-10
+09/02/2021,Tesco,-40
+11/11/2021,Amazon,-32
+21/11/2021,Amazon,-47
+08/03/2021,Amazon,-100
+05/03/2021,Tesco,-100
+12/03/2021,Amazon,-33
+10/07/2021,Tesco Petrol Station,-52
+17/02/2021,Tesco,0
+04/12/2021,Amazon,-34
+18/07/2021,Tesco,-16
+07/08/2021,Amazon,-5
+24/02/2021,Amazon,-11
+07/02/2021,Tesco,-97
+28/11/2021,Tesco,-42
+11/02/2021,Amazon,-82
+24/09/2021,Amazon,-38
+22/08/2021,Tesco Petrol Station,-13
+16/06/2021,Tesco,17
+07/11/2021,Tesco,-99
+26/04/2021,Tesco,-23
+27/02/2021,Amazon,-46
+27/04/2021,Tesco Petrol Station,18
+25/01/2021,Tesco,-68
+02/08/2021,Amazon,-55
+10/12/2021,Tesco Petrol Station,-70
+21/07/2021,Tesco,11
+05/02/2021,Amazon,-96
+20/06/2021,Amazon,-93
+28/01/2021,Amazon,-71
+23/12/2021,Tesco,-11
+09/01/2021,Tesco Petrol Station,2
+16/04/2021,Tesco,-72
+05/11/2021,Tesco,-43
+01/05/2021,Tesco Petrol Station,0
+24/02/2021,Tesco Petrol Station,15
+02/01/2021,Tesco,-65
+16/11/2021,Tesco,-51
+11/07/2021,Tesco,-6
+26/08/2021,Tesco Petrol Station,-29
+25/03/2021,Amazon,-90
+22/09/2021,Tesco,-79
+09/03/2021,Amazon,-80
+16/06/2021,Tesco Petrol Station,-12
+29/05/2021,Tesco,14
+22/09/2021,Tesco,-47
+09/04/2021,Amazon,-1
+02/03/2021,Tesco,-39
+11/02/2021,Amazon,-15
+22/01/2021,Tesco Petrol Station,-55
+24/01/2021,Tesco Petrol Station,-46
+17/04/2021,Tesco,17
+05/11/2021,Tesco,-9
+11/02/2021,Amazon,-98
+03/02/2021,Amazon,-3
+26/02/2021,Tesco Petrol Station,-63
+02/06/2021,Tesco Petrol Station,-72
+26/11/2021,Amazon,-49
+16/08/2021,Amazon,-62
+25/03/2021,Tesco,-6
+25/02/2021,Tesco,-17
+24/11/2021,Tesco Petrol Station,-59
+26/04/2021,Amazon,11
+31/05/2021,Tesco Petrol Station,-48
+08/02/2021,Tesco,-19
+29/06/2021,Tesco Petrol Station,-81
+13/02/2021,Tesco Petrol Station,19
+03/10/2021,Amazon,-3
+28/01/2021,Tesco Petrol Station,-31
+18/05/2021,Tesco,-60
+19/08/2021,Tesco,-37
+14/06/2021,Amazon,-13
+12/10/2021,Tesco Petrol Station,-70
+25/12/2021,Amazon,-99
+12/10/2021,Tesco Petrol Station,-59
+19/03/2021,Tesco Petrol Station,-29
+07/10/2021,Tesco Petrol Station,16
+07/01/2021,Amazon,-65
+24/09/2021,Amazon,4
+07/06/2021,Amazon,-86
+12/03/2021,Tesco Petrol Station,14
+30/04/2021,Tesco Petrol Station,-13
+20/10/2021,Amazon,-21
+15/04/2021,Amazon,-25
+20/04/2021,Tesco,-86
+08/12/2021,Amazon,-3
+14/04/2021,Tesco,-65
+09/11/2021,Tesco,-67
+24/07/2021,Tesco,-51
+13/10/2021,Amazon,-64
+05/11/2021,Tesco Petrol Station,-91
+30/01/2021,Tesco,18
+22/12/2021,Amazon,-31
+15/10/2021,Tesco,-86
+23/10/2021,Tesco,-39
+03/04/2021,Tesco,-60
+15/07/2021,Amazon,-15
+14/11/2021,Tesco,-62
+25/10/2021,Amazon,16
+22/04/2021,Tesco Petrol Station,-96
+17/12/2021,Tesco,-13
+24/06/2021,Tesco Petrol Station,-45
+07/08/2021,Tesco,-26
+10/02/2021,Amazon,3
+27/05/2021,Tesco,-42
+30/08/2021,Amazon,-66
+13/02/2021,Tesco Petrol Station,-90
+04/12/2021,Tesco Petrol Station,-50
+11/06/2021,Tesco Petrol Station,11
+06/11/2021,Amazon,-7
+22/05/2021,Amazon,-98
+03/02/2021,Amazon,-100
+26/03/2021,Tesco,5
+21/09/2021,Tesco,19
+05/07/2021,Amazon,-91
+23/11/2021,Tesco,-100
+21/10/2021,Tesco,1
+06/08/2021,Tesco,-62
+04/04/2021,Tesco Petrol Station,-40
+22/06/2021,Tesco,-99
+28/04/2021,Tesco,-53
+31/05/2021,Tesco,8
+13/08/2021,Tesco Petrol Station,-26
+09/04/2021,Tesco,-68
+03/12/2021,Tesco,-26
+20/10/2021,Tesco Petrol Station,-7
+06/03/2021,Tesco Petrol Station,-64
+22/04/2021,Tesco,-43
+25/03/2021,Tesco,13
+01/08/2021,Tesco Petrol Station,-59
+07/09/2021,Tesco,-95
+06/06/2021,Tesco,-46
+17/10/2021,Tesco Petrol Station,-19
+19/11/2021,Tesco,-13
+29/07/2021,Tesco Petrol Station,-63
+22/03/2021,Tesco Petrol Station,4
+12/05/2021,Tesco Petrol Station,-26
+17/08/2021,Amazon,-43
+03/01/2021,Amazon,-6
+30/06/2021,Amazon,-78
+22/11/2021,Tesco,-80
+23/08/2021,Tesco,-93
+06/06/2021,Amazon,-49
+01/11/2021,Tesco,-3
+26/10/2021,Tesco Petrol Station,-62
+24/06/2021,Tesco Petrol Station,-90
+01/04/2021,Tesco,-57
+04/06/2021,Amazon,-93
+24/07/2021,Tesco,-74
+17/01/2021,Tesco,-91
+31/03/2021,Tesco Petrol Station,7
+10/05/2021,Tesco,16
+10/06/2021,Tesco Petrol Station,-7
+08/07/2021,Amazon,-27
+26/11/2021,Amazon,-20
+23/07/2021,Tesco,-90
+03/11/2021,Tesco Petrol Station,-38
+21/08/2021,Tesco Petrol Station,-92
+29/07/2021,Tesco,-7
+22/11/2021,Tesco,-68
+20/09/2021,Amazon,-98
+14/10/2021,Tesco Petrol Station,-83
+01/02/2021,Tesco,-100
+17/06/2021,Amazon,-56
+17/09/2021,Tesco Petrol Station,16
+05/05/2021,Tesco,-55
+05/11/2021,Tesco,-49
+04/12/2021,Tesco,-78
+13/01/2021,Tesco Petrol Station,-11
+21/12/2021,Tesco Petrol Station,7
+11/06/2021,Tesco,-64
+10/10/2021,Tesco,0
+02/05/2021,Amazon,14
+21/04/2021,Tesco Petrol Station,-7
+03/08/2021,Tesco,19
+04/11/2021,Tesco Petrol Station,-27
+28/12/2021,Tesco Petrol Station,-86
+27/10/2021,Tesco Petrol Station,-49
+20/02/2021,Tesco,-60
+04/11/2021,Tesco,-36
+19/10/2021,Tesco,14
+19/01/2021,Tesco,-73
+07/01/2021,Tesco Petrol Station,-8
+14/06/2021,Amazon,-14
+21/12/2021,Amazon,16
+16/12/2021,Amazon,-54
+12/01/2021,Tesco Petrol Station,6
+13/01/2021,Tesco,-41
+14/08/2021,Tesco,-54
+09/08/2021,Tesco,-67
+27/08/2021,Amazon,-72
+03/01/2021,Tesco,-31
+10/05/2021,Tesco Petrol Station,-48
+27/05/2021,Tesco,-92
+25/01/2021,Tesco Petrol Station,10
+18/09/2021,Tesco,12
+10/08/2021,Tesco Petrol Station,-99
+18/08/2021,Tesco,-4
+08/11/2021,Tesco,-53
+26/06/2021,Amazon,-31
+07/06/2021,Amazon,-16
+06/09/2021,Tesco,-79
+30/09/2021,Tesco,-17
+31/01/2021,Amazon,-65
+16/04/2021,Amazon,-57
+20/04/2021,Tesco Petrol Station,-40
+19/11/2021,Tesco,-50
+28/05/2021,Tesco Petrol Station,-53
+20/12/2021,Tesco Petrol Station,13
+14/08/2021,Amazon,-98
+17/07/2021,Tesco Petrol Station,-64
+19/08/2021,Tesco,-68
+27/01/2021,Tesco,-87
+03/07/2021,Amazon,-92
+25/05/2021,Tesco Petrol Station,-43
+18/01/2021,Tesco,-51
+30/04/2021,Amazon,-13
+22/02/2021,Amazon,-35
+20/02/2021,Amazon,-14
+15/07/2021,Tesco Petrol Station,-40
+07/05/2021,Tesco Petrol Station,-14
+14/11/2021,Tesco Petrol Station,-93
+06/08/2021,Tesco Petrol Station,-49
+24/08/2021,Amazon,-40
+03/02/2021,Tesco,-4
+31/10/2021,Tesco,-75
+06/04/2021,Amazon,-90
+15/12/2021,Tesco Petrol Station,-76
+24/05/2021,Amazon,-63
+10/12/2021,Tesco Petrol Station,-62
+12/02/2021,Amazon,-79
+11/05/2021,Tesco,0
+01/04/2021,Amazon,-36
+28/01/2021,Tesco Petrol Station,-68
+05/05/2021,Tesco,-71
+15/02/2021,Tesco,-93
+10/03/2021,Tesco Petrol Station,-86
+17/02/2021,Amazon,-41
+10/07/2021,Tesco Petrol Station,-96
+18/06/2021,Tesco,-75
+07/02/2021,Amazon,19
+06/05/2021,Tesco,-84
+21/07/2021,Amazon,18
+07/02/2021,Tesco,-65
+15/07/2021,Tesco Petrol Station,-45
+19/08/2021,Tesco,15
+13/02/2021,Tesco Petrol Station,-25
+25/03/2021,Tesco Petrol Station,13
+22/02/2021,Amazon,1
+16/02/2021,Tesco Petrol Station,-75
+27/11/2021,Amazon,-79
+11/05/2021,Tesco Petrol Station,-73
+16/02/2021,Tesco Petrol Station,-6
+19/12/2021,Tesco,16
+07/05/2021,Amazon,-50
+05/09/2021,Tesco,-11
+02/03/2021,Tesco,4
+07/09/2021,Tesco Petrol Station,-95
+17/12/2021,Tesco Petrol Station,-59
+22/05/2021,Tesco Petrol Station,9
+22/04/2021,Amazon,13
+30/09/2021,Tesco,-77
+03/06/2021,Tesco,17
+17/06/2021,Tesco Petrol Station,-63
+02/02/2021,Tesco Petrol Station,-88
+09/03/2021,Tesco Petrol Station,19
+05/03/2021,Tesco,-64
+10/10/2021,Tesco,-95
+11/11/2021,Tesco,-94
+07/08/2021,Amazon,-58
+21/07/2021,Tesco Petrol Station,-31
+01/10/2021,Amazon,-30
+22/12/2021,Tesco,19
+27/03/2021,Tesco Petrol Station,-13
+18/07/2021,Amazon,-8
+12/09/2021,Tesco Petrol Station,-58
+08/08/2021,Tesco,-10
+02/12/2021,Tesco,-95
+03/01/2021,Tesco Petrol Station,-67
+31/12/2021,Tesco,-19
+12/03/2021,Tesco Petrol Station,-85
+18/02/2021,Tesco,-7
+31/07/2021,Tesco Petrol Station,-17
+11/01/2021,Amazon,-35
+17/09/2021,Amazon,-68
+16/01/2021,Tesco Petrol Station,-9
+16/02/2021,Amazon,-23
+17/07/2021,Amazon,-30
+19/12/2021,Tesco,12
+06/08/2021,Amazon,-32
+18/07/2021,Tesco Petrol Station,12
+10/01/2021,Tesco,-79
+17/11/2021,Amazon,-31
+23/08/2021,Tesco Petrol Station,10
+18/02/2021,Tesco,-75
+20/05/2021,Tesco Petrol Station,-92
+19/02/2021,Tesco Petrol Station,-90
+13/04/2021,Tesco,-57
+14/02/2021,Tesco,-88
+25/05/2021,Tesco,-88
+05/03/2021,Amazon,-59
+07/10/2021,Tesco,3
+29/06/2021,Tesco Petrol Station,-74
+13/01/2021,Tesco,-24
+19/07/2021,Tesco Petrol Station,-44
+12/04/2021,Amazon,-25
+14/09/2021,Tesco Petrol Station,-14
+26/03/2021,Tesco Petrol Station,-46
+26/10/2021,Amazon,-10
+18/06/2021,Tesco,-40
+05/11/2021,Tesco,-70
+28/11/2021,Amazon,-47
+17/06/2021,Tesco,-96
+12/03/2021,Tesco Petrol Station,-55
+24/03/2021,Tesco,-30
+04/08/2021,Tesco,-60
+20/11/2021,Tesco Petrol Station,-13
+16/02/2021,Amazon,-87
+21/05/2021,Tesco Petrol Station,-34
+06/04/2021,Tesco,-98
+25/12/2021,Amazon,-24
+02/06/2021,Tesco,-38
+09/06/2021,Tesco,-94
+22/02/2021,Tesco Petrol Station,-37
+15/10/2021,Amazon,-75
+29/04/2021,Amazon,-34
+30/01/2021,Tesco Petrol Station,-73
+16/06/2021,Amazon,-95
+21/06/2021,Tesco,-10
+01/03/2021,Tesco,6
+29/01/2021,Tesco,2
+14/12/2021,Tesco Petrol Station,-90
+03/06/2021,Tesco,-73
+17/01/2021,Amazon,-96
+21/04/2021,Tesco,-96
+15/03/2021,Tesco Petrol Station,-59
+09/12/2021,Tesco,-62
+12/10/2021,Tesco,16
+17/06/2021,Tesco Petrol Station,-86
+20/11/2021,Tesco,-8
+27/04/2021,Amazon,-94
+02/12/2021,Tesco Petrol Station,-56
+22/02/2021,Amazon,-93
+19/01/2021,Amazon,-35
+08/08/2021,Amazon,-4
+19/07/2021,Tesco Petrol Station,-76
+03/11/2021,Amazon,-10
+15/01/2021,Tesco,-27
+26/01/2021,Tesco Petrol Station,-46
+17/07/2021,Tesco,-69
+06/06/2021,Amazon,-17
+03/12/2021,Tesco,-28
+31/08/2021,Amazon,-49
+05/08/2021,Tesco Petrol Station,8
+05/12/2021,Tesco,13
+31/07/2021,Amazon,-85
+23/10/2021,Tesco,-82
+18/02/2021,Tesco Petrol Station,-17
+04/12/2021,Tesco,-40
+11/08/2021,Tesco,-26
+30/06/2021,Amazon,-57
+13/08/2021,Tesco Petrol Station,-93
+04/02/2021,Tesco Petrol Station,-60
+09/12/2021,Amazon,-93
+02/02/2021,Tesco,-50
+11/02/2021,Amazon,-37
+10/02/2021,Amazon,-90
+20/07/2021,Tesco,13
+27/01/2021,Tesco,-84
+24/12/2021,Tesco Petrol Station,-63
+01/01/2021,Amazon,-62
+06/12/2021,Tesco,-27
+15/05/2021,Tesco,-56
+04/06/2021,Amazon,-29
+28/02/2021,Amazon,-67
+27/07/2021,Amazon,-5
+11/10/2021,Amazon,-72
+23/09/2021,Tesco,-90
+04/09/2021,Tesco,-13
+12/03/2021,Amazon,7
+16/02/2021,Tesco Petrol Station,-1
+03/12/2021,Amazon,-14
+10/06/2021,Tesco,10
+23/02/2021,Amazon,-24
+11/06/2021,Amazon,15
+04/01/2021,Amazon,-17
+16/04/2021,Amazon,-70
+25/12/2021,Amazon,19
+08/10/2021,Tesco,-92
+06/05/2021,Tesco Petrol Station,-84
+31/10/2021,Amazon,12
+09/06/2021,Tesco,-35
+25/06/2021,Tesco,-74
+15/06/2021,Tesco Petrol Station,-35
+17/02/2021,Tesco,-77
+24/11/2021,Tesco,-18
+18/07/2021,Amazon,-5
+03/01/2021,Tesco Petrol Station,-97
+08/05/2021,Tesco,-52
+24/10/2021,Amazon,15
+20/09/2021,Amazon,-2
+10/05/2021,Tesco Petrol Station,-87
+02/10/2021,Tesco,15
+05/07/2021,Tesco,9
+29/05/2021,Tesco,-23
+09/04/2021,Amazon,-83
+21/09/2021,Amazon,-14
+23/06/2021,Tesco Petrol Station,-9
+11/01/2021,Tesco Petrol Station,-18
+07/08/2021,Tesco,-89
+29/09/2021,Tesco,-35
+02/02/2021,Tesco Petrol Station,-100
+01/09/2021,Tesco Petrol Station,-27
+24/02/2021,Tesco,-33
+02/07/2021,Amazon,7
+05/11/2021,Amazon,-8
+25/11/2021,Amazon,-69
+11/04/2021,Amazon,-89
+23/04/2021,Amazon,-99
+12/12/2021,Amazon,-98
+11/03/2021,Amazon,-15
+03/09/2021,Tesco Petrol Station,-10
+11/10/2021,Tesco Petrol Station,-97
+12/09/2021,Tesco,-96
+06/12/2021,Tesco Petrol Station,-4
+18/01/2021,Tesco,-65
+15/08/2021,Tesco Petrol Station,-15
+21/03/2021,Tesco Petrol Station,0
+03/02/2021,Tesco,-61
+03/02/2021,Tesco Petrol Station,-92
+09/07/2021,Tesco,10
+28/06/2021,Tesco Petrol Station,-45
+23/08/2021,Tesco Petrol Station,-93
+21/04/2021,Amazon,17
+15/02/2021,Tesco Petrol Station,-58
+27/12/2021,Tesco,5
+14/03/2021,Amazon,-36
+19/09/2021,Tesco Petrol Station,-15
+13/12/2021,Tesco,-87
+13/02/2021,Tesco Petrol Station,-19
+14/12/2021,Amazon,-95
+13/08/2021,Amazon,-59
+29/08/2021,Tesco,-43
+07/01/2021,Tesco,-51
+17/05/2021,Amazon,-51
+29/12/2021,Amazon,0
+17/12/2021,Tesco,-76
+22/10/2021,Tesco,0
+17/02/2021,Tesco,-80
+04/07/2021,Tesco,-55
+04/12/2021,Tesco,-12
+11/06/2021,Tesco Petrol Station,-30
+25/08/2021,Tesco Petrol Station,-4
+28/10/2021,Amazon,-9
+28/08/2021,Tesco,-6
+04/05/2021,Tesco,-7
+26/06/2021,Tesco Petrol Station,-37
+17/05/2021,Tesco,-18
+25/09/2021,Tesco Petrol Station,-64
+17/09/2021,Tesco Petrol Station,-67
+20/11/2021,Tesco,-30
+11/08/2021,Amazon,14
+24/12/2021,Amazon,-59
+16/07/2021,Amazon,-44
+29/03/2021,Amazon,-5
+21/06/2021,Tesco,-30
+10/05/2021,Amazon,-7
+03/03/2021,Amazon,-13
+20/12/2021,Amazon,-46
+27/10/2021,Amazon,-21
+20/01/2021,Amazon,-91
+03/01/2021,Tesco,-98
+19/09/2021,Tesco,-40
+29/11/2021,Tesco,-30
+31/10/2021,Amazon,-56
+18/10/2021,Tesco Petrol Station,-34
+13/07/2021,Amazon,-85
+31/10/2021,Tesco,-36
+16/05/2021,Amazon,-52
+29/09/2021,Amazon,-12
+30/11/2021,Amazon,-20
+31/01/2021,Amazon,-23
+28/10/2021,Amazon,-61
+26/11/2021,Tesco,-92
+15/01/2021,Tesco Petrol Station,-38
+19/05/2021,Tesco Petrol Station,-91
+10/05/2021,Amazon,-32
+28/03/2021,Tesco,7
+04/02/2021,Tesco Petrol Station,-9
+27/10/2021,Amazon,-8
+11/04/2021,Tesco,-2
+12/11/2021,Tesco Petrol Station,10
+25/05/2021,Amazon,0
+23/12/2021,Amazon,-49
+09/01/2021,Tesco Petrol Station,-53
+21/11/2021,Amazon,-40
+23/10/2021,Tesco,5
+23/09/2021,Tesco,-22
+21/03/2021,Tesco Petrol Station,-53
+22/11/2021,Tesco,-57
+21/03/2021,Amazon,-97
+19/03/2021,Tesco,-30
+26/07/2021,Tesco,-11
+12/02/2021,Tesco,-81
+08/06/2021,Tesco,-19
+22/10/2021,Amazon,12
+15/04/2021,Tesco,-8
+12/11/2021,Tesco,-81
+05/08/2021,Tesco Petrol Station,-8
+21/10/2021,Tesco,1
+04/04/2021,Tesco,-48
+28/06/2021,Tesco Petrol Station,6
+16/01/2021,Amazon,-12
+06/09/2021,Tesco,5
+07/08/2021,Tesco Petrol Station,-7
+10/04/2021,Tesco Petrol Station,-95
+03/06/2021,Amazon,-24
+19/01/2021,Amazon,-91
+19/04/2021,Tesco Petrol Station,6
+21/03/2021,Tesco Petrol Station,-52
+27/01/2021,Tesco,-47
+16/04/2021,Tesco Petrol Station,10
+08/02/2021,Tesco,-100
+20/02/2021,Tesco Petrol Station,11
+03/05/2021,Amazon,-49
+06/02/2021,Tesco,-58
+19/03/2021,Tesco,-63
+13/07/2021,Tesco Petrol Station,-65
+14/02/2021,Tesco,-88
+10/04/2021,Tesco,-16
+18/10/2021,Amazon,-39
+05/02/2021,Tesco,-81
+20/01/2021,Tesco,-98
+25/03/2021,Tesco Petrol Station,-91
+17/09/2021,Tesco Petrol Station,-23
+30/08/2021,Tesco,-88
+30/04/2021,Tesco,-36
+20/05/2021,Amazon,-15
+03/05/2021,Amazon,-10
+09/02/2021,Tesco Petrol Station,-61
+05/03/2021,Amazon,-11
+04/10/2021,Tesco Petrol Station,-68
+24/09/2021,Tesco,-69
+17/10/2021,Tesco Petrol Station,-23
+27/03/2021,Tesco,-3
+19/12/2021,Tesco,-12
+11/03/2021,Tesco,-94
+09/04/2021,Amazon,6
+15/12/2021,Amazon,-45
+18/03/2021,Amazon,0
+08/07/2021,Tesco Petrol Station,-59
+31/07/2021,Tesco Petrol Station,-61
+11/06/2021,Amazon,-29
+11/09/2021,Amazon,-3
+01/06/2021,Amazon,-18
+07/09/2021,Amazon,-1
+08/05/2021,Tesco,7
+20/07/2021,Tesco Petrol Station,-33
+31/03/2021,Amazon,-73
+29/11/2021,Amazon,-66
+04/11/2021,Tesco Petrol Station,-61
+19/12/2021,Tesco,-48
+26/09/2021,Tesco Petrol Station,-40
+26/04/2021,Amazon,-10
+03/04/2021,Tesco Petrol Station,-75
+18/04/2021,Amazon,-73
+11/11/2021,Tesco,-9
+30/10/2021,Tesco Petrol Station,-9
+29/09/2021,Tesco Petrol Station,7
+20/04/2021,Tesco,-58
+07/10/2021,Tesco,13
+29/06/2021,Tesco Petrol Station,3
+18/10/2021,Tesco Petrol Station,-12
+10/05/2021,Tesco,-25
+03/11/2021,Tesco,-69
+04/03/2021,Amazon,-40
+27/02/2021,Amazon,9
+31/01/2021,Tesco Petrol Station,-51
+22/04/2021,Amazon,10
+16/07/2021,Tesco Petrol Station,-6
+09/04/2021,Amazon,1
+03/05/2021,Tesco,-9
+01/12/2021,Tesco,-35
+05/06/2021,Tesco,-59
+14/01/2021,Tesco,-69
+11/01/2021,Amazon,-53
+17/04/2021,Tesco Petrol Station,-100
+07/12/2021,Tesco Petrol Station,-42
+02/08/2021,Amazon,3
+28/12/2021,Tesco Petrol Station,-94
+24/04/2021,Tesco,-93
+18/11/2021,Tesco Petrol Station,-88
+23/12/2021,Tesco,-20
+04/09/2021,Tesco,-47
+06/08/2021,Amazon,-22
+21/10/2021,Tesco Petrol Station,1
+12/07/2021,Tesco,-38
+14/12/2021,Tesco Petrol Station,-67
+26/01/2021,Tesco Petrol Station,-85
+21/10/2021,Amazon,2
+12/11/2021,Tesco,-30
+05/11/2021,Tesco,-83
+01/10/2021,Amazon,-37
+15/03/2021,Tesco Petrol Station,14
+15/10/2021,Tesco,-46
+05/02/2021,Tesco,-2
+24/02/2021,Amazon,-93
+23/05/2021,Tesco Petrol Station,-2
+06/04/2021,Tesco Petrol Station,-99
+18/11/2021,Amazon,-33
+01/08/2021,Amazon,-91
+08/07/2021,Tesco,-13
+27/12/2021,Amazon,-62
+18/07/2021,Amazon,-68
+30/03/2021,Amazon,-16
+30/12/2021,Tesco,-18
+07/09/2021,Tesco Petrol Station,18
+10/11/2021,Tesco,-81
+23/09/2021,Tesco Petrol Station,-37
+28/05/2021,Tesco,-61
+25/02/2021,Tesco,-28
+04/12/2021,Amazon,-33
+16/09/2021,Tesco,-68
+15/07/2021,Amazon,-68
+16/10/2021,Tesco Petrol Station,-95
+02/01/2021,Tesco Petrol Station,-47
+27/10/2021,Tesco Petrol Station,-19
+28/03/2021,Tesco,-59
+25/06/2021,Amazon,-99
+26/03/2021,Tesco,-19
+13/06/2021,Tesco,-28
+12/08/2021,Tesco Petrol Station,-89
+08/10/2021,Tesco,-16
+13/03/2021,Tesco Petrol Station,-96
+16/06/2021,Tesco Petrol Station,-31
+28/06/2021,Tesco Petrol Station,-64
+13/02/2021,Amazon,-63
+03/02/2021,Tesco Petrol Station,-66
+04/01/2021,Tesco,-79
+05/02/2021,Amazon,-30
+20/12/2021,Amazon,-86
+09/11/2021,Tesco Petrol Station,-10
+18/05/2021,Tesco,-60
+20/11/2021,Amazon,15
+25/02/2021,Amazon,-19
+05/01/2021,Amazon,-94
+13/07/2021,Tesco,-3
+16/12/2021,Tesco Petrol Station,-1
+07/10/2021,Amazon,-85
+25/09/2021,Tesco Petrol Station,-79
+02/01/2021,Tesco,-93
+09/11/2021,Tesco,-4
+22/03/2021,Amazon,19
+11/01/2021,Tesco,-75
+09/12/2021,Tesco,-77
+03/11/2021,Amazon,-31
+20/04/2021,Amazon,-84
+01/04/2021,Tesco,-21
+21/10/2021,Tesco Petrol Station,-30
+15/12/2021,Tesco,-23
+04/12/2021,Amazon,-11
