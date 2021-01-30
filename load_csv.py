@@ -30,15 +30,7 @@ def normaliseDescription(raw):
     return sub(r'\s+', ' ', raw.strip().lower())
 
 
-def loadFile(filePath, added):
-    (filePathWithoutExtension, fileExtension) = ntpath.splitext(filePath)
-    if fileExtension != '.csv':
-        return
-
-    print(f"Reading CSV file '{filePath}'")
-
-    fileName = ntpath.basename(filePathWithoutExtension)
-
+def loadFile(filePath, added, account):
     transactions = []
     with open(filePath, encoding='utf8') as csvFile:
         reader = CsvReader(csvFile)
@@ -56,7 +48,7 @@ def loadFile(filePath, added):
                 amount=amount,
                 description=description,
                 added=added,
-                account=fileName))
+                account=account))
 
     print(f"Found {len(transactions)} transactions")
     return transactions
@@ -72,8 +64,13 @@ if __name__ == "__main__":
     transactions = []
     for root, dirPaths, filePaths in walk(args.directory):
         for filePath in filePaths:
-            transactions += loadFile(ntpath.abspath(
-                ntpath.join(root, filePath)), added)
+            (filePathWithoutExtension, fileExtension) = ntpath.splitext(filePath)
+            if fileExtension != '.csv':
+                continue
+
+            print(f"Reading CSV file '{filePath}'")
+            account = ntpath.basename(filePathWithoutExtension)
+            transactions += loadFile(ntpath.abspath(ntpath.join(root, filePath)), added, account)
 
     insertSql = 'INSERT INTO transactions (id,timestamp,amount,description,added,account) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING'
 
