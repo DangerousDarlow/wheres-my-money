@@ -33,17 +33,17 @@ def normaliseDescription(raw):
 def loadFile(reader, added, account):
     transactions = []
     
-    field = buildFieldLookup(reader)
+    fieldIndexes = buildFieldLookup(reader)
     for row in reader:
         if len(row) < 3:
             continue
 
-        amount = int(float(row[field['amount']]) * AmountScalingFactor)
+        amount = int(float(row[fieldIndexes['amount']]) * AmountScalingFactor)
         if amount == 0:
             continue
 
-        timestamp = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
-        description = normaliseDescription(row[field['description']])
+        timestamp = datetime.strptime(row[fieldIndexes['date']].strip(), '%d/%m/%Y').date()
+        description = normaliseDescription(row[fieldIndexes['description']])
         transactions.append(Transaction(
             id=uuid4(),
             timestamp=timestamp,
