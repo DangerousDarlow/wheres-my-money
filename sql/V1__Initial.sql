@@ -24,6 +24,12 @@ create index transactions_timestamp_index
 
 
 
+CREATE OR REPLACE FUNCTION readable(bigint) RETURNS numeric
+    AS $$ SELECT CAST($1 AS numeric) / 1000000 $$
+    LANGUAGE SQL;
+
+
+
 create table tags
 (
 	id uuid not null
