@@ -2,11 +2,12 @@ from argparse import ArgumentParser
 from csv import reader as CsvReader
 from datetime import date, datetime
 from dbConfig import dbConnectionString
-from os import path, walk
+from os import walk
 from psycopg2 import connect
 from re import sub
 from transaction import AmountScalingFactor, Transaction
 from uuid import uuid4
+import ntpath
 
 
 def readNotEmpty(reader):
@@ -29,12 +30,14 @@ def normaliseDescription(raw):
     return sub(r'\s+', ' ', raw.strip().lower())
 
 
-def loadFile(filePath):
-    (_, extension) = path.splitext(filePath)
-    if extension != '.csv':
+def loadFile(filePath, added):
+    (filePathWithoutExtension, fileExtension) = ntpath.splitext(filePath)
+    if fileExtension != '.csv':
         return
 
     print(f"Reading CSV file '{filePath}'")
+
+    fileName = ntpath.basename(filePathWithoutExtension)
 
     transactions = []
     with open(filePath, encoding='utf8') as csvFile:
@@ -48,7 +51,12 @@ def loadFile(filePath):
             amount = int(float(row[field['amount']]) * AmountScalingFactor)
             description = normaliseDescription(row[field['description']])
             transactions.append(Transaction(
-                id=uuid4(), timestamp=timestamp, amount=amount, description=description))
+                id=uuid4(),
+                timestamp=timestamp,
+                amount=amount,
+                description=description,
+                added=added,
+                account=fileName))
 
     print(f"Found {len(transactions)} transactions")
     return transactions
@@ -59,18 +67,22 @@ if __name__ == "__main__":
     parser.add_argument('directory', type=str, help='Data file directory')
     args = parser.parse_args()
 
+    added = datetime.now()
+
     transactions = []
     for root, dirPaths, filePaths in walk(args.directory):
         for filePath in filePaths:
-            transactions += loadFile(path.abspath(path.join(root, filePath)))
+            transactions += loadFile(ntpath.abspath(
+                ntpath.join(root, filePath)), added)
 
-    insertSql = 'INSERT INTO transactions (id,timestamp,amount,description) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING'
+    insertSql = 'INSERT INTO transactions (id,timestamp,amount,description,added,account) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING'
 
     with connect(dbConnectionString) as dbConnection:
         dbConnection.autocommit = False
         with dbConnection.cursor() as dbCursor:
             for transaction in transactions:
                 dbCursor.execute(insertSql, (transaction.id, transaction.timestamp,
-                                             transaction.amount, transaction.description))
+                                             transaction.amount, transaction.description,
+                                             transaction.added, transaction.account))
 
             dbConnection.commit()
