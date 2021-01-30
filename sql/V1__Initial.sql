@@ -10,7 +10,7 @@ create table transactions
 	account text not null
 );
 
-create unique index transactions_unique_index
+create unique index transactions_uindex
 	on transactions (timestamp, amount, description);
 
 create index transactions_amount_index
@@ -24,27 +24,50 @@ create index transactions_timestamp_index
 
 
 
-CREATE OR REPLACE FUNCTION readable(bigint) RETURNS numeric
-    AS $$ SELECT CAST($1 AS numeric) / 1000000 $$
-    LANGUAGE SQL;
-
-
-
 create table tags
 (
 	id uuid not null
 		constraint tags_pk
 			primary key,
-	name text not null,
-	regex text not null
+	name text not null
 );
 
 
 
 create table transactions_tags
 (
-	transaction_id uuid not null,
-	tag_id uuid not null,
+	transaction_id uuid not null
+		constraint transactions_tags_transactions_fk
+			references transactions,
+	tag_id uuid not null
+		constraint transactions_tags_tags_fk
+			references tags,
 	constraint transactions_tags_pk
 		primary key (transaction_id, tag_id)
 );
+
+
+
+create table tags_regex
+(
+	id uuid not null
+		constraint tags_regex_pk
+			primary key,
+	tag_id uuid not null
+		constraint tags_regex_tags_fk
+			references tags,
+	regex text not null
+);
+
+
+
+create unique index tags_regex_uindex
+	on tags_regex (tag_id, regex);
+
+
+
+create function readable(bigint) returns numeric
+	language sql
+as $$
+SELECT CAST($1 AS numeric) / 1000000
+$$;
