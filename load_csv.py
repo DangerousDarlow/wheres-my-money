@@ -30,27 +30,28 @@ def normaliseDescription(raw):
     return sub(r'\s+', ' ', raw.strip().lower())
 
 
-def loadFile(filePath, added, account):
+def loadFile(reader, added, account):
     transactions = []
-    with open(filePath, encoding='utf8') as csvFile:
-        reader = CsvReader(csvFile)
-        field = buildFieldLookup(reader)
-        for row in reader:
-            if len(row) < 3:
-                continue
+    
+    field = buildFieldLookup(reader)
+    for row in reader:
+        if len(row) < 3:
+            continue
 
-            timestamp = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
-            amount = int(float(row[field['amount']]) * AmountScalingFactor)
-            description = normaliseDescription(row[field['description']])
-            transactions.append(Transaction(
-                id=uuid4(),
-                timestamp=timestamp,
-                amount=amount,
-                description=description,
-                added=added,
-                account=account))
+        amount = int(float(row[field['amount']]) * AmountScalingFactor)
+        if amount == 0:
+            continue
 
-    print(f"Found {len(transactions)} transactions")
+        timestamp = datetime.strptime(row[field['date']], '%d/%m/%Y').date()
+        description = normaliseDescription(row[field['description']])
+        transactions.append(Transaction(
+            id=uuid4(),
+            timestamp=timestamp,
+            amount=amount,
+            description=description,
+            added=added,
+            account=account))
+
     return transactions
 
 
@@ -69,8 +70,12 @@ if __name__ == "__main__":
                 continue
 
             print(f"Reading CSV file '{filePath}'")
-            account = ntpath.basename(filePathWithoutExtension)
-            transactions += loadFile(ntpath.abspath(ntpath.join(root, filePath)), added, account)
+            with open(ntpath.abspath(ntpath.join(root, filePath)), encoding='utf8') as csvFile:
+                reader = CsvReader(csvFile)
+                account = ntpath.basename(filePathWithoutExtension)
+                transactions += loadFile(reader, added, account)
+
+    print(f"Found {len(transactions)} transactions")
 
     insertSql = 'INSERT INTO transactions (id,timestamp,amount,description,added,account) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING'
 
