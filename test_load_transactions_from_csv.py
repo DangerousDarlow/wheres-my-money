@@ -2,7 +2,7 @@ from csv import reader as CsvReader
 from datetime import datetime, date
 from io import StringIO
 
-from load_csv import build_field_lookup, normalise_description, load_file
+from load_transactions_from_csv import build_field_lookup, normalise_description, load_file
 
 
 def test_field_names_have_leading_and_trailing_whitespace_trimmed():
