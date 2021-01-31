@@ -10,15 +10,15 @@ from uuid import uuid4
 import ntpath
 
 
-def readNotEmpty(reader):
+def read_not_empty(reader):
     while reader:
         row = next(reader, None)
         if row and row[0].strip():
             return row
 
 
-def buildFieldLookup(reader):
-    headerRow = readNotEmpty(reader)
+def build_field_lookup(reader):
+    headerRow = read_not_empty(reader)
     headers = {}
     for i in range(len(headerRow)):
         headers[headerRow[i].lower().strip()] = i
@@ -26,14 +26,14 @@ def buildFieldLookup(reader):
     return headers
 
 
-def normaliseDescription(raw):
+def normalise_description(raw):
     return sub(r'\s+', ' ', raw.strip().lower())
 
 
-def loadFile(reader, added, account):
+def load_file(reader, added, account):
     transactions = []
     
-    fieldIndexes = buildFieldLookup(reader)
+    fieldIndexes = build_field_lookup(reader)
     for row in reader:
         if len(row) < 3:
             continue
@@ -43,7 +43,7 @@ def loadFile(reader, added, account):
             continue
 
         timestamp = datetime.strptime(row[fieldIndexes['date']].strip(), '%d/%m/%Y').date()
-        description = normaliseDescription(row[fieldIndexes['description']])
+        description = normalise_description(row[fieldIndexes['description']])
         transactions.append(Transaction(
             id=uuid4(),
             timestamp=timestamp,
@@ -73,7 +73,7 @@ if __name__ == "__main__":
             with open(ntpath.abspath(ntpath.join(root, filePath)), encoding='utf8') as csvFile:
                 reader = CsvReader(csvFile)
                 account = ntpath.basename(filePathWithoutExtension)
-                transactions += loadFile(reader, added, account)
+                transactions += load_file(reader, added, account)
 
     print(f"Found {len(transactions)} transactions")
 

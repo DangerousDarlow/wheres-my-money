@@ -4,7 +4,7 @@ from psycopg2 import connect
 from transaction import Transaction
 
 
-def getUntaggedTransactions(dbConnection, limit):
+def get_untagged_transactions(dbConnection, limit):
     countTransactions = 'SELECT COUNT(id) FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL'
     selectTransactions = 'SELECT id, timestamp, amount, description, added, account FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL ORDER BY t.timestamp DESC LIMIT %s'
 
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     with connect(dbConnectionString) as dbConnection:
-        (count, transactions) = getUntaggedTransactions(dbConnection, args.limit)
+        (count, transactions) = get_untagged_transactions(dbConnection, args.limit)
         print(f'{count} transactions without tags')
         print()
 
