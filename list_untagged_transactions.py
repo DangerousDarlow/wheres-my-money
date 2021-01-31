@@ -5,14 +5,14 @@ from transaction import Transaction
 
 
 def get_untagged_transactions(dbConnection, limit):
-    countTransactions = 'SELECT COUNT(id) FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL'
-    selectTransactions = 'SELECT id, timestamp, amount, description, added, account FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL ORDER BY t.timestamp DESC LIMIT %s'
+    countSql = 'SELECT COUNT(id) FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL'
+    selectSql = 'SELECT id, timestamp, amount, description, added, account FROM transactions t FULL JOIN transactions_tags tt ON t.id = tt.transaction_id WHERE tt.transaction_id IS NULL ORDER BY t.timestamp DESC LIMIT %s'
 
     with dbConnection.cursor() as dbCursor:
-        dbCursor.execute(countTransactions)
+        dbCursor.execute(countSql)
         count = dbCursor.fetchone()[0]
 
-        dbCursor.execute(selectTransactions, [limit])
+        dbCursor.execute(selectSql, [limit])
         transactions = [Transaction(row[0], row[1], row[2], row[3], row[4], row[5]) for row in dbCursor.fetchall()]
         return (count, transactions)
 

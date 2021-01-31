@@ -32,6 +32,9 @@ create table tags
 	name text not null
 );
 
+create unique index tags_name_uindex
+	on tags (name);
+
 
 
 create table transactions_tags
