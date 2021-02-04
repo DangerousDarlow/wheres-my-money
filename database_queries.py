@@ -20,15 +20,14 @@ def get_or_create_tag(dbConnection, name):
             return result[0]
 
 
-def add_regex_for_tag(dbConnection, tagId, regexes):
-    insertSql = 'INSERT INTO tags_regex(id, tag_id, regex) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING'
+def add_filter_for_tag(dbConnection, tagId, regex, condition):
+    insertSql = 'INSERT INTO tag_filters(id, tag_id, regex, condition) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING'
     with dbConnection.cursor() as dbCursor:
-        for regex in regexes:
-            dbCursor.execute(insertSql, [uuid4(), tagId, regex])
+        dbCursor.execute(insertSql, [uuid4(), tagId, regex, condition])
 
 
-def get_tags_regex(dbConnection):
-    selectSql = 'SELECT tag_id, regex FROM tags_regex'
+def get_tag_filters(dbConnection):
+    selectSql = 'SELECT tag_id, regex, condition FROM tag_filters'
     with dbConnection.cursor() as dbCursor:
         dbCursor.execute(selectSql)
         return dbCursor.fetchall()

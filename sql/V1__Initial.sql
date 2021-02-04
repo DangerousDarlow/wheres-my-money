@@ -22,8 +22,6 @@ create index transactions_description_index
 create index transactions_timestamp_index
 	on transactions (timestamp);
 
-
-
 create table tags
 (
 	id uuid not null
@@ -34,8 +32,6 @@ create table tags
 
 create unique index tags_name_uindex
 	on tags (name);
-
-
 
 create table transactions_tags
 (
@@ -49,25 +45,20 @@ create table transactions_tags
 		primary key (transaction_id, tag_id)
 );
 
-
-
-create table tags_regex
+create table tag_filters
 (
 	id uuid not null
-		constraint tags_regex_pk
+		constraint tag_filters_pk
 			primary key,
 	tag_id uuid not null
-		constraint tags_regex_tags_fk
+		constraint tag_filters_tags_fk
 			references tags,
-	regex text not null
+	regex text not null,
+	condition text
 );
 
-
-
-create unique index tags_regex_uindex
-	on tags_regex (tag_id, regex);
-
-
+create unique index tag_filters_uindex
+	on tag_filters (tag_id, regex, condition);
 
 create function readable(bigint) returns numeric
 	language sql

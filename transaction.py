@@ -1,6 +1,4 @@
-from datetime import datetime
 from decimal import Decimal
-from uuid import UUID, uuid4
 
 
 class Transaction:
